@@ -12,7 +12,7 @@ metadata:
     storageclass.kubernetes.io/is-default-class: "false"
   name: standard-gp2
   namespace: jlab
-provisioner: kubernetes.io/aws-ebs #localhost
+provisioner: docker.io/hostpath #localhost
 parameters:
   type: gp2
 reclaimPolicy: Retain
