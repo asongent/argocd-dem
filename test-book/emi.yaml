@@ -32,7 +32,7 @@ metadata:
   name: sex-pod
 spec:
   containers:
-  - image: nginx
+  - image: jmugu/dockerapp
     name: sex-pod
     envFrom:
     - configMapRef:
