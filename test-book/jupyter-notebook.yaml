@@ -9,10 +9,10 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   annotations:
-    storageclass.kubernetes.io/is-default-class: "false"
+    storageclass.kubernetes.io/is-default-class: "true"
   name: standard-gp2
   namespace: jlab
-provisioner: docker.io/hostpath #localhost
+provisioner: kubernetes.io/aws-ebs #localhost
 parameters:
   type: gp2
 reclaimPolicy: Retain
