@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: frontend
+  name: frontend-app
   labels:
     app: guestbook
-    tier: frontend
+    tier: frontend-app
 spec:
   # modify replicas according to your case
   replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      tier: frontend-app
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: frontend-app
     spec:
       containers:
       - name: php-redis

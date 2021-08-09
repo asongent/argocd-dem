@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dns-autoscaler
+  name: dnsapp-autoscaler
   namespace: kube-system
   labels:
-    k8s-app: dns-autoscaler
+    k8s-app: dnsapp-autoscaler
 spec:
   selector:
     matchLabels:
-      k8s-app: dns-autoscaler
+      k8s-app: dnsapp-autoscaler
   template:
     metadata:
       labels:
-        k8s-app: dns-autoscaler
+        k8s-app: dnsapp-autoscaler
     spec:
       containers:
-      - name: autoscaler
+      - name: dnsapp-autoscaler
         image: k8s.gcr.io/cluster-proportional-autoscaler-amd64:1.6.0
         resources:
           requests:

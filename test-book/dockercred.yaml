@@ -4,5 +4,5 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: docker-sec
+  name: docker-secret
 type: kubernetes.io/dockerconfigjson
