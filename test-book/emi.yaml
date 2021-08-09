@@ -1,0 +1,42 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tracy-config
+data:
+  APP_COLOR: green
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: sexpod
+  name: sexpod-service
+spec:
+  ports:
+  - port: 500
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: sexpod
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: sexpod
+  name: sexpod
+spec:
+  containers:
+  - image: nginx
+    name: sexpod
+    envFrom:
+    - configMapRef:
+        name: tracy-config
+    ports:
+    - containerPort: 80
+  

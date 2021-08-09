@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: pods-hig
+  namespace: prod
+
+spec:
+    hard:
+      cpu: "4"
+      memory: 10Gi
+      pods: "10"
