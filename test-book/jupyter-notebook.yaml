@@ -27,7 +27,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: standard-gp2 #standard-gp2-retain
+  storageClassName: gp2 #standard-gp2-retain
 
 ---
 apiVersion: apps/v1
