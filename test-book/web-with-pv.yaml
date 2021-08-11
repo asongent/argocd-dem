@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: frontendapp
+  name: frontend
   namespace: dev
 spec:
   containers:
