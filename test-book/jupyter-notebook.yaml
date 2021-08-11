@@ -1,9 +1,3 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: dev
-spec: {}
-status: {}
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
