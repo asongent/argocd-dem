@@ -38,7 +38,7 @@ metadata:
   labels:
     name: jupyter-notebook
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       name: jupyter-notebook
