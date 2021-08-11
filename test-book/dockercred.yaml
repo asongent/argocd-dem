@@ -4,4 +4,5 @@ data:
 kind: Secret
 metadata:
   name: docker-secret
+  namespace: dev
 type: kubernetes.io/dockerconfigjson

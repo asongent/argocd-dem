@@ -11,7 +11,7 @@ metadata:
   annotations:
     storageclass.kubernetes.io/is-default-class: "false"
   name: standard-gp2
-  namespace: jlab
+  namespace: dev
 provisioner: docker.io/hostpath #localhost
 parameters:
   type: gp2

@@ -2,8 +2,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: pods-less
-  namespace: prod
-
+  namespace: dev
 spec:
     hard:
       cpu: "4"
