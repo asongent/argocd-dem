@@ -1,7 +1,6 @@
 resources:
 - base/ds.yaml
 - base/jupyter.yaml
-- base/ds.yaml
 - base/ns.yaml
 - base/rq.yaml
 - base/deployment.yaml
