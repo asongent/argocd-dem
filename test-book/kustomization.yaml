@@ -5,4 +5,4 @@ resources:
 - base/namesp.yaml
 - base/resourcequota.yaml
 #- base/tracyapp-deployment.yaml
-- base/web-with-pvc.yaml
+#- base/web-with-pvc.yaml
