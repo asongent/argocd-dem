@@ -82,7 +82,7 @@ metadata:
   labels:
     name: jupyter-notebook-service
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 800
       targetPort: 8888
