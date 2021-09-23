@@ -1,8 +1,8 @@
 resources:
-- base/DaemonSet.yaml
-- base/jupyter-notebook.yaml
-- base/db-secret.yaml
+- base/ds.yaml
+- base/jupyter.yaml
+- base/ds.yaml
 - base/ns.yaml
-- base/resourcequota.yaml
-- base/tracy-deployment.yaml
-- base/web-pvc.yaml
+- base/rq.yaml
+- base/deployment.yaml
+- base/pvc.yaml
