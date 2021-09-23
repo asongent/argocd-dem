@@ -1,0 +1,8 @@
+resources:
+- base/namesp.yaml
+- base/DaemonSet.yaml
+- base/jupyter-notebook.yaml
+- base/db-secret.yaml
+- base/resourcequota.yaml
+- base/tracyapp-deployment.yaml
+- base/web-with-pvc.yaml
