@@ -2,7 +2,7 @@ resources:
 - base/DaemonSet.yaml
 - base/jupyter-notebook.yaml
 - base/db-secret.yaml
-- base/namesp.yaml
+- base/ns.yaml
 - base/resourcequota.yaml
-#- base/tracyapp-deployment.yaml
-#- base/web-with-pvc.yaml
+- base/tracy-deployment.yaml
+- base/web-pvc.yaml
